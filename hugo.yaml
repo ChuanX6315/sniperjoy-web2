@@ -47,16 +47,16 @@ markup:
       xhtml: false
 
 params:
-  author: Nusser Studios
+  author: Sniperjoy
   authorimage: ../assets/images/global/author.webp
   og_image: /images/tailbliss-cover.png
-  moto: "Super Fast, and Flexible"
-  description: "A Hugo theme built with love, using TailwindCSS, Alpine.JS, and Hugo Pipes. Images are optimized for use with Hugo Pipes for WebP format."
+  moto: "精準捕捉每一份喜悅"
+  description: "我受不了啦"
   disable_theme_toggle: false
   newsletter_signup: true
 
   p1:
-    heading: "Our mission"
+    heading: "提供的服務"
     image: "images/pages/our-mission.png"
     content:
       - text: "Sagittis scelerisque nulla cursus in enim consectetur quam. Dictum urna sed consectetur neque tristique pellentesque. Blandit amet, sed aenean erat arcu morbi. Cursus faucibus nunc nisl netus morbi vl porttitor vitae ut. Amet vitae fames senectus vitae."
@@ -121,11 +121,11 @@ params:
 menu:
   main:
     - identifier: prose
-      name: Prose
+      name: 攝影作品
       url: /prose/
       weight: 10
     - identifier: about
-      name: About
+      name: 關於我們
       url: /about/
       weight: 20
     - identifier: categories
@@ -137,7 +137,7 @@ menu:
       name: Dropdown
       weight: 40
     - identifier: contact
-      name: Contact
+      name: 聯絡我們
       url: /contact/
       weight: 50
   categories:

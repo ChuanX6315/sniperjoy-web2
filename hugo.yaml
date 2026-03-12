@@ -88,7 +88,7 @@ params:
         url: "#"
     logos:
       - identifier: a
-        image: "images/global/sample-logo.svg"
+        image: "C:\Users\tamad\Desktop\網頁\sniperjoy-web2\static\images\Gemini_Generated_Image_86"
         alt: "a"
       - identifier: b
       - identifier: c

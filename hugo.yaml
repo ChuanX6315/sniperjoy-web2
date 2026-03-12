@@ -88,7 +88,7 @@ params:
         url: "#"
     logos:
       - identifier: a
-        image: "images\Gemini_Generated_Image_86"
+        image: "images/global/Gemini_Generated_Image_86.png"
         alt: "a"
   p4:
     heading: "From the blog"

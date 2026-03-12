@@ -14,10 +14,6 @@ concurrency:
   group: "pages"
   cancel-in-progress: false
 
-defaults:
-  run:
-    shell: bash
-
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -29,8 +25,8 @@ jobs:
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v3
         with:
-          hugo-version: '0.121.2' # 指定一個穩定的版本
-          extended: true          # 務必確保開啟擴展版
+          hugo-version: '0.123.0' # 升級到更穩定的版本
+          extended: true
       - name: Build with Hugo
         run: hugo --minify
       - name: Upload artifact

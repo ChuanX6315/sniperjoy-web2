@@ -51,17 +51,17 @@ params:
   authorimage: ../assets/images/global/author.webp
   og_image: /images/tailbliss-cover.png
   moto: "精準捕捉每一份喜悅"
-  description: "我受不了啦"
+  description: "專注攝影與紀錄"
   disable_theme_toggle: false
   newsletter_signup: true
 
   p1:
     heading: "提供的服務"
-    image: "images/pages/our-mission.png"
+    image: "images/pages/ou›r-mission.png"
     content:
-      - text: "Sagittis scelerisque nulla cursus in enim consectetur quam. Dictum urna sed consectetur neque tristique pellentesque. Blandit amet, sed aenean erat arcu morbi. Cursus faucibus nunc nisl netus morbi vl porttitor vitae ut. Amet vitae fames senectus vitae."
-      - text: "Sollicitudin tristique eros erat odio sed vitae, consequat turpis elementum. Lorem nibh vel, eget pretium arcu vitae. Eros eu viverra donec ut volutpat donec laoreet quam urna. Sollicitudin tristique eroserat odio sed vitae, consequat turpis elementum. Lorem nibh vel, eget pretium arcu vitae. Eros eu viverra donec ut volutpat donec laoreet quam urna."
-      - text: "Rhoncus nisl, libero egestas diam fermentum dui. At quis tincidunt vel ultricies. Vulputate aliquet velit faucibus semper. Pellentesque in venenatis vestibulum consectetur nibh id. In id ut tempus egestas. Enim sit aliquam nec, a. Morbi enim fermentum lacus in. Viverra."
+      - text: "斯奈波喬伊致力於影像製作，從音樂錄影帶到活動紀錄，從活動轉播到劇情片，都能帶給您最優質的角度與視野。"
+      - text: "從南部發跡，在台灣四處闖蕩，為了完成客戶心目中的畫面。"
+      - text: "SniperJoy 精準捕捉每一瞬間"
   p2:
     heading: "Just in time for Hacktoberfest with JIT Tailwind."
     image: "images/pages/hacktoberfest.jpg"

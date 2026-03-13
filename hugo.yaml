@@ -48,37 +48,20 @@ markup:
 
 params:
   author: Sniperjoy
-  authorimage: ../assets/images/global/author.webp
+  authorimage: ../assets/images/global/123.png
   og_image: /images/tailbliss-cover.png
-  moto: "精準捕捉每一份喜悅"
+  moto: ""
   description: "專注攝影與紀錄"
   disable_theme_toggle: false
   newsletter_signup: true
 
   p1:
     heading: "提供的服務"
-    image: "images/pages/IMG_7069.JPG"
+    image: "images/pages/123.png"
     content:
       - text: "斯奈波喬伊致力於影像製作，從音樂錄影帶到活動紀錄，從活動轉播到劇情片，都能帶給您最優質的角度與視野。"
       - text: "從南部發跡，在台灣四處闖蕩，為了完成客戶心目中的畫面。"
       - text: "SniperJoy 精準捕捉每一瞬間"
-  p2:
-    heading: "Just in time for Hacktoberfest with JIT Tailwind."
-    image: "images/pages/hacktoberfest.jpg"
-    content:
-      - text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur at purus non enim commodo tincidunt vel in nulla. Aenean pretium dolor non ultricies bibendum. Etiam quis blandit enim. Nunc condimentum ut lorem in faucibus. Phasellus varius ligula et commodo tristique. Nunc sodales nisl nec laoreet vehicula. Donec velit nibh, sollicitudin at nulla a, egestas dignissim eros. Sed lacinia hendrerit interdum. Vestibulum pellentesque sem venenatis nisl tempor accumsan sit amet tempus felis. Mauris leo diam, porttitor nec bibendum id, tempus ac nulla. Etiam congue ornare erat at convallis. Donec in nisi dapibus, mattis risus vel, imperdiet enim. Donec fermentum sit amet tortor nec tincidunt. Nam nec lectus tortor. Nunc sit amet laoreet orci, porta ornare massa. Phasellus eget lorem mi. Nam eleifend ultricies sapien, quis mollis leo bibendum at. Quisque viverra lorem sit amet magna aliquet, et dignissim arcu eleifend."
-      - type: "table"
-        columns:
-          - heading: "Column 1"
-            items:
-              - "Bullet point 1"
-              - "Bullet point 2"
-              - "Bullet point 3"
-          - heading: "Column 2"
-            items:
-              - "Bullet point 4"
-              - "Bullet point 5"
-              - "Bullet point 6"
   p3:
     heading: "Backed by world-renowned investors"
     content:

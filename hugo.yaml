@@ -56,7 +56,7 @@ params:
   newsletter_signup: true
 
   p1:
-    heading: "斯奈波喬伊"
+    heading: "斯奈波"
     image: "images/pages/123.png"
     content:
       - text: "斯奈波喬伊致力於影像製作，從音樂錄影帶到活動紀錄，從活動轉播到劇情片，都能帶給您最優質的角度與視野。"

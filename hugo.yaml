@@ -61,33 +61,22 @@ params:
     content:
       - text: "斯奈波喬伊致力於影像製作，從音樂錄影帶到活動紀錄，從活動轉播到劇情片，都能帶給您最優質的角度與視野。"
       - text: "從南部發跡，在台灣四處闖蕩，為了完成客戶心目中的畫面。"
-      - text: "SniperJoy 精準捕捉每一瞬間"
-
-  p3:
-    heading: "專業器材與技術"
-    content:
       - text: "我們使用專業級全片幅系統進行拍攝，確保每一張照片與每一段影片都能擁有極致的畫質與寬容度。無論是低光源的活動現場，還是需要高精度紀錄的商業攝影，我們都能精準掌握。"
-    links:
-      - text: Meet our investors and advisors
-        url: "#"
-    logos:
-      - identifier: a
-        image: "images/global/Gemini_Generated_Image_86.png"
-        alt: "a"
 
+ 
   social_media:
     github:
       enabled: true
-      url: 'https://github.com/nusserstudios'
+      url: 'https://github.com/ChuanX6315'
     facebook:
       enabled: true
-      url: 'https://facebook.com/nusserstudios'
+      url: 'https://www.facebook.com/share/1ETSUJ1qPz/?mibextid=wwXIfr'
     instagram:
       enabled: true
-      url: 'https://instagram.com/nusserstudios'
+      url: 'https://www.instagram.com/chuanx.officialll/'
     twitter:
       enabled: true
-      url: 'https://twitter.com/nusserstudios'
+      url: 'https://twitter.com/we_nmixx'
     
 
 menu:

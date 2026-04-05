@@ -48,37 +48,20 @@ markup:
 
 params:
   author: Sniperjoy
-  authorimage: ../assets/images/global/123.png
+  authorimage: ../assets/images/global/main.png
   og_image: /images/Gemini_Generated_Image_86.png
   moto: ""
   description: "專注攝影與紀錄"
   disable_theme_toggle: false
-  newsletter_signup: true
+  newsletter_signup: false
 
   p1:
     heading: "斯奈波喬伊"
-    image: "images/pages/123.png"
+    image: "images/pages/main.png"
     content:
       - text: "斯奈波喬伊致力於影像製作，從音樂錄影帶到活動紀錄，從活動轉播到劇情片，都能帶給您最優質的角度與視野。"
       - text: "從南部發跡，在台灣四處闖蕩，為了完成客戶心目中的畫面。"
       - text: "SniperJoy 精準捕捉每一瞬間"
-  p2:
-    heading: "提供的服務"
-    image: "images/pages/123.png"
-    content:
-      - text: "我們有"
-      - type: "table"
-        columns:
-          - heading: "平面攝影"
-            items:
-              - "人像寫真"
-              - "活動紀錄"
-              - "商業攝影"
-          - heading: "動態影像"
-            items:
-              - "婚禮錄影"
-              - "品牌短片"
-              - "活動側錄"
 
   p3:
     heading: "專業器材與技術"
@@ -91,18 +74,6 @@ params:
       - identifier: a
         image: "images/global/Gemini_Generated_Image_86.png"
         alt: "a"
-  p4:
-    heading: "From the blog"
-    content:
-      - text: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa libero labore natus atque, ducimus sed."
-  p5:
-    heading: "Stay Up to Date"
-    content:
-      - text: "Sagittis scelerisque nulla cursus in enim consectetur quam. Dictum urna sed consectetur neque tristique pellentesque."
-    action: "#"
-    label: "Email address"
-    placeholder: "Enter your email"
-    button: "Notify me"
 
   social_media:
     github:
@@ -161,27 +132,6 @@ menu:
       post: "Take a look at your statistics"
       url: "#"
       weight: 30
-  footer:
-    - identifier: about
-      name: About
-      url: /about/
-      weight: 10
-    - identifier: blog
-      name: Blog
-      url: /categories/blog/
-      weight: 20
-    - identifier: news
-      name: News
-      url: /categories/news/
-      weight: 30
-    - identifier: prose
-      name: Prose
-      url: /prose/
-      weight: 40
-    - identifier: contact
-      name: Contact
-      url: /contact/
-      weight: 50
 
 taxonomies:
   category: Categories

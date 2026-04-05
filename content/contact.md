@@ -10,7 +10,7 @@ description: 歡迎與預約各類攝影與動態影像服務
 
 <section class="pb-12 lg:pb-16">
   <div class="px-4 mx-auto max-w-screen-md">
-      <p class="mb-4 font-light text-center text-gray-500 lg:mb-10 dark:text-gray-400 sm:text-xl">填寫下方表單，我們將盡快與您聯繫。</p>
+      <p class="mb-4 font-bold text-center text-gray-500 lg:mb-6 dark:text-gray-400 sm:text-xl">填寫下方表單，我們將盡快與您聯繫。</p>
       <form name="contact" action="https://formsubmit.co/tamad4701@gmail.com" method="POST" class="space-y-8"> 
         <input type="hidden" name="_next" value="https://www.sniperjoy.com/">
         <input type="hidden" name="_subject" value="Sniperjoy 官網新諮詢">

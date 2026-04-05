@@ -8,7 +8,7 @@ description: 歡迎與預約各類攝影與動態影像服務
 
 <!-- @format -->
 
-<section class="pb-6 lg:pb-16">
+<section class="pb-6 lg:pb-2">
   <div class="px-4 mx-auto max-w-screen-md">
       <p class="mb-4 font-bold text-center text-gray-500 lg:mb-6 dark:text-gray-400 sm:text-xl">填寫下方表單，我們將盡快與您聯繫。</p>
       <form name="contact" action="https://formsubmit.co/tamad4701@gmail.com" method="POST" class="space-y-8"> 
@@ -28,7 +28,7 @@ description: 歡迎與預約各類攝影與動態影像服務
               <textarea id="message" name="message" rows="6" class="block p-2.5 w-full text-gray-900 bg-gray-50 rounded-lg border border-gray-300 shadow-sm placeholder-gray-400 text-md focus:ring-indigo-500 focus:border-indigo-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-indigo-500 dark:focus:border-indigo-500" placeholder="請描述您的拍攝需求、時間與地點..."></textarea>
           </div>
           <div class="mt-6 lg:pb-8 flex justify-center">
-             <button type="submit" class="px-16 py-2 font-bold text-center text-white bg-indigo-600 rounded-lg text-md w-full sm:w-fit hover:bg-indigo-800 transition-colors duration-200 focus:ring-4 focus:outline-none focus:ring-indigo-300 dark:bg-indigo-600 dark:hover:bg-indigo-700 dark:focus:ring-indigo-800">送出</button>
+             <button type="submit" class="px-2 py-3 font-bold text-center text-white bg-indigo-600 rounded-lg text-md w-full sm:w-fit hover:bg-indigo-800 transition-colors duration-200 focus:ring-4 focus:outline-none focus:ring-indigo-300 dark:bg-indigo-600 dark:hover:bg-indigo-700 dark:focus:ring-indigo-800">送出</button>
           </div>
       </form>
   </div>

@@ -1,242 +1,49 @@
 ---
-title: "About us "
+title: "關於我們"
 date: 2021-12-18T11:10:36+08:00
 draft: false
-language: en
+language: zh-tw
 description: About Us
 featured_image: ../assets/images/featured/featured-img-placeholder.JPG
 ---
 
-# h1 Heading :blush:
-## h2 Heading
-### h3 Heading
-#### h4 Heading
-##### h5 Heading
-###### h6 Heading
+# 關於 斯奈波喬伊 (Sniperjoy)
 
-
-## Horizontal Rules
+> **精準捕捉每一瞬間，帶給您最優質的角度與視野。**
 
 ***
 
+## 我們的故事
+
+**斯奈波喬伊** 致力於專業影像製作。我們的服務範疇廣泛，包含：
+
+* **音樂錄影帶 (MV)**：打造視覺與聽覺的完美結合。
+* **活動紀錄**：保存每一刻珍貴的感動。
+* **活動轉播**：即時、精準的畫面呈現。
+* **劇情短片**：透過鏡頭訴說動人的故事。
+
+從**南部發跡**，我們在台灣四處闖蕩。無論山海，只要是為了完成客戶心目中的畫面，我們就會帶著器材出發。
+
 ---
 
-___
+## 提供的服務項目
 
+| 服務類別 | 具體內容 |
+| :--- | :--- |
+| **平面攝影** | 人像寫真、活動紀錄、商業攝影 |
+| **動態影像** | 婚錄、品牌短片、音樂錄影帶、活動側錄 |
+| **技術支援** | 活動即時轉播、影片後期剪輯 |
 
-## Typographic replacements
+---
 
-Enable typographer option to see result.
+## 為什麼選擇我們？
 
-(c) (C) (r) (R) (tm) (TM) (p) (P) +-
+我們相信每一格畫面都有其靈魂。憑藉著對攝影的熱愛與專業技術，我們不僅僅是「按下快門」，更是為了實現您腦海中的構想。
 
-test.. test... test..... test?..... test!....
+#### 預約須知
+由於拍攝檔期較滿，建議至少提前 **2-4 週** 聯繫我們，以便預留最佳時段。
 
-!!!!!! ???? ,,  -- ---
+---
 
-"Smartypants, double quotes" and 'single quotes'
-
-
-## Emphasis
-
-**This is bold text**
-
-__This is bold text__
-
-*This is italic text*
-
-_This is italic text_
-
-~~Strikethrough~~
-
-
-## Blockquotes
-
-
-> Blockquotes can also be nested...
->> ...by using additional greater-than signs right next to each other...
-> > > ...or with spaces between arrows.
-
-
-## Lists
-
-Unordered
-
-+ Create a list by starting a line with `+`, `-`, or `*`
-+ Sub-lists are made by indenting 2 spaces:
-  - Marker character change forces new list start:
-    * Ac tristique libero volutpat at
-    + Facilisis in pretium nisl aliquet
-    - Nulla volutpat aliquam velit
-+ Very easy!
-
-Ordered
-
-1. Lorem ipsum dolor sit amet
-2. Consectetur adipiscing elit
-3. Integer molestie lorem at massa
-
-
-1. You can use sequential numbers...
-1. ...or keep all the numbers as `1.`
-
-Start numbering with offset:
-
-57. foo
-1. bar
-
-
-## Code
-
-Inline `code`
-
-Indented code
-
-    // Some comments
-    line 1 of code
-    line 2 of code
-    line 3 of code
-
-
-Block code "fences"
-
-```
-Sample text here...
-```
-
-Syntax highlighting
-
-```
-var foo = function (bar) {
-  return bar++;
-};
-
-console.log(foo(5));
-```
-
-## Tables
-
-| Option | Description |
-| ------ | ----------- |
-| data   | path to data files to supply the data that will be passed into templates. |
-| engine | engine to be used for processing templates. Handlebars is the default. |
-| ext    | extension to be used for dest files. |
-
-Right aligned columns
-
-| Option | Description |
-| ------:| -----------:|
-| data   | path to data files to supply the data that will be passed into templates. |
-| engine | engine to be used for processing templates. Handlebars is the default. |
-| ext    | extension to be used for dest files. |
-
-
-## Links
-
-[link text](http://dev.nodeca.com)
-
-[link with title](http://nodeca.github.io/pica/demo/ "title text!")
-
-Autoconverted link https://github.com/nodeca/pica (enable linkify to see)
-
-
-## Images
-
-![Minion](https://octodex.github.com/images/minion.png)
-![Stormtroopocat](https://octodex.github.com/images/stormtroopocat.jpg "The Stormtroopocat")
-
-Like links, Images also have a footnote style syntax
-
-![Alt text][id]
-
-With a reference later in the document defining the URL location:
-
-[id]: https://octodex.github.com/images/dojocat.jpg  "The Dojocat"
-
-
-## Plugins
-
-The killer feature of `markdown-it` is very effective support of
-[syntax plugins](https://www.npmjs.org/browse/keyword/markdown-it-plugin).
-
-
-### [Emojies](https://github.com/markdown-it/markdown-it-emoji)
-
-> Classic markup: :wink: :crush: :cry: :tear: :laughing: :yum:
->
-> Shortcuts (emoticons): :-) :-( 8-) ;)
-
-see [how to change output](https://github.com/markdown-it/markdown-it-emoji#change-output) with twemoji.
-
-
-### [Subscript](https://github.com/markdown-it/markdown-it-sub) / [Superscript](https://github.com/markdown-it/markdown-it-sup)
-
-- 19^th^
-- H~2~O
-
-
-### [\<ins>](https://github.com/markdown-it/markdown-it-ins)
-
-++Inserted text++
-
-
-### [\<mark>](https://github.com/markdown-it/markdown-it-mark)
-
-==Marked text==
-
-
-### [Footnotes](https://github.com/markdown-it/markdown-it-footnote)
-
-Footnote 1 link[^first].
-
-Footnote 2 link[^second].
-
-Inline footnote^[Text of inline footnote] definition.
-
-Duplicated footnote reference[^second].
-
-[^first]: Footnote **can have markup**
-
-    and multiple paragraphs.
-
-[^second]: Footnote text.
-
-
-### [Definition lists](https://github.com/markdown-it/markdown-it-deflist)
-
-Term 1
-
-:   Definition 1
-with lazy continuation.
-
-Term 2 with *inline markup*
-
-:   Definition 2
-
-        { some code, part of Definition 2 }
-
-    Third paragraph of definition 2.
-
-_Compact style:_
-
-Term 1
-  ~ Definition 1
-
-Term 2
-  ~ Definition 2a
-  ~ Definition 2b
-
-
-### [Abbreviations](https://github.com/markdown-it/markdown-it-abbr)
-
-This is HTML abbreviation example.
-
-It converts "HTML", but keep intact partial entries like "xxxHTMLyyy" and so on.
-
-*[HTML]: Hyper Text Markup Language
-
-### [Custom containers](https://github.com/markdown-it/markdown-it-container)
-
-::: warning
-*here be dragons*
-:::
+### 聯絡我們
+如果您有任何拍攝需求，歡迎直接透過 [聯絡頁面](/contact/) 與我們洽詢，或參考我們的 [攝影作品](/prose/)。

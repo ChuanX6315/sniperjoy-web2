@@ -11,7 +11,7 @@ description: 歡迎與預約各類攝影與動態影像服務
 <section class="lg:pb-24">
   <div class="px-4 mx-auto max-w-screen-md">
       <p class="mb-8 font-light text-center text-gray-500 lg:mb-16 dark:text-gray-400 sm:text-xl">填寫下方表單，我們將盡快與您聯繫。</p>
-      <form name="contact" action="https://formsubmit.co/your@email.com" method="POST" class="space-y-8">
+      <form name="contact" action="https://formsubmit.co/tamad4701@gmail.com" method="POST" class="space-y-8">
           <div class="my-4">
               <label for="email" class="block mb-2 font-medium text-gray-900 text-md dark:text-gray-50"><strong>您的信箱:</strong></label>
               <input type="email" id="email" name="email" class="block p-2.5 w-full text-gray-900 bg-gray-50 rounded-lg border border-gray-300 shadow-sm placeholder-gray-400 text-md focus:ring-indigo-500 focus:border-indigo-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-indigo-500 dark:focus:border-indigo-500" placeholder="example@mail.com" required>

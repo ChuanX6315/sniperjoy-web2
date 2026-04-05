@@ -129,14 +129,6 @@ menu:
       name: 關於我們
       url: /about/
       weight: 20
-    - identifier: categories
-      pre: dropdown
-      name: Categories
-      weight: 30
-    - identifier: dropdown
-      pre: complexdropdown
-      name: Dropdown
-      weight: 40
     - identifier: contact
       name: 聯絡我們
       url: /contact/

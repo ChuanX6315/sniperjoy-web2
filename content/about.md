@@ -9,7 +9,7 @@ featured_image: ../assets/images/featured/featured-img-placeholder.JPG
 
 # 斯奈波喬伊 Sniperjoy
 
-> **精準捕捉每一瞬間，帶給您最優質的角度與視野。**
+> **完整的團隊，優秀的實力，打造無可挑惕。**
 
 ***
 
@@ -22,7 +22,7 @@ featured_image: ../assets/images/featured/featured-img-placeholder.JPG
 * **活動轉播**：即時、精準的畫面呈現。
 * **劇情短片**：透過鏡頭訴說動人的故事。
 
-從**南部發跡**，我們在台灣四處闖蕩。上山下海，只要是為了完成客戶心目中的畫面，我們就會帶著器材出發。
+從**南部發跡**，上山下海，只要是為了完成客戶心目中的畫面，我們就會帶著器材出發。
 
 ---
 

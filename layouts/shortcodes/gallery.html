@@ -10,7 +10,7 @@
 <img src="{{ strings.TrimSpace $img }}"
        data-gallery="{{ $title }}"
        data-index="{{ $i }}"
-       style="width:100%; aspect-ratio:1/1; object-fit:cover; border-radius:0.5rem; cursor:pointer;"
+       style="width:100%; object-fit:contain; border-radius:0.5rem; cursor:pointer; background:#111;"
        onclick="openLB(this)"
        loading="eager">
   {{ end }}

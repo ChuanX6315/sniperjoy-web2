@@ -5,7 +5,7 @@ draft: false
 description: "斯奈波喬伊 Sniperjoy：精準捕捉，專注紀錄每一瞬間。"
 ---
 
-> 從 30 秒的商業廣告到深入人心的紀錄片，我們用影像實現客戶心目中的畫面。
+> 從 30 秒商業廣告到深入人心的紀錄片，我們用影像實現客戶心目中的畫面。
 
 ---
 
@@ -13,7 +13,7 @@ description: "斯奈波喬伊 Sniperjoy：精準捕捉，專注紀錄每一瞬�
 
 ### 勝昌製藥｜固關四珍 PLUS
 **職位：監製**
-品牌代言人邰智源推薦，以現代感視覺呈現品牌活力。
+品牌代言人邰智源推薦，以現代感視覺呈現品牌活力與信賴感。
 {{< youtube wC5CmGOB66g >}}
 
 ---
@@ -58,10 +58,10 @@ description: "斯奈波喬伊 Sniperjoy：精準捕捉，專注紀錄每一瞬�
 
 ---
 
-## 更多作品
+## 更多資料
 
 - [Behance 線上作品集](https://www.behance.net/8b8a3908)
-- [詳細文字簡歷 (Google Drive)](https://drive.google.com/file/d/1kjaiVvvrwLk5EvQeyE6zEOey2fzd_4en/view?usp=drive_link)
+- [詳細文字簡歷（Google Drive）](https://drive.google.com/file/d/1kjaiVvvrwLk5EvQeyE6zEOey2fzd_4en/view?usp=drive_link)
 
 ---
 

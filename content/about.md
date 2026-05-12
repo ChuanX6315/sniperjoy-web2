@@ -4,7 +4,6 @@ date: 2021-12-18T11:10:36+08:00
 draft: false
 language: zh-tw
 description: 斯奈波喬伊 Sniperjoy — 專注影像製作，從商業廣告到紀錄片。
-featured_image: ../assets/images/featured/featured-img-placeholder.JPG
 ---
 
 # 斯奈波喬伊 Sniperjoy
@@ -38,6 +37,46 @@ featured_image: ../assets/images/featured/featured-img-placeholder.JPG
 我們不只是「按下快門」——從前期規劃、現場執行到後製交付，每個環節都有專人負責，確保最終成品符合你的期待。
 
 高規格設備搭配豐富實戰經驗，無論是低光源活動現場、商業棚拍，還是戶外紀實，我們都能精準到位。
+
+---
+
+## 團隊成員
+
+<div style="max-width: 900px; margin: 3rem auto;">
+
+  <!-- Rafael -->
+  <div style="display: flex; align-items: center; gap: 3rem; margin-bottom: 5rem; flex-wrap: wrap;">
+    <div style="flex: 1; min-width: 280px;">
+      <img src="/images/cyw.jpg" alt="王傳亦 Rafael"
+           style="width: 100%; aspect-ratio: 1/1; object-fit: cover; border-radius: 1rem;">
+    </div>
+    <div style="flex: 1; min-width: 240px;">
+      <p style="font-size: 0.85rem; letter-spacing: 0.2em; color: gray; margin-bottom: 0.5rem; text-transform: uppercase;">Co-Founder</p>
+      <h3 style="font-size: 2rem; font-weight: 800; margin-bottom: 0.25rem;">王傳亦</h3>
+      <h4 style="font-size: 1.2rem; font-weight: 400; margin-bottom: 1rem; color: gray;">Rafael</h4>
+      <div style="width: 40px; height: 3px; background: white; margin-bottom: 1.5rem;"></div>
+      <p style="font-size: 0.9rem; color: gray; letter-spacing: 0.05em; margin-bottom: 1rem;">導演 · 平面攝影 · 後製</p>
+      <p style="font-size: 1.1rem; line-height: 1.8;">我的帥不是寫在臉上</p>
+    </div>
+  </div>
+
+  <!-- WJ -->
+  <div style="display: flex; align-items: center; gap: 3rem; flex-wrap: wrap-reverse;">
+    <div style="flex: 1; min-width: 240px; text-align: right;">
+      <p style="font-size: 0.85rem; letter-spacing: 0.2em; color: gray; margin-bottom: 0.5rem; text-transform: uppercase;">Co-Founder</p>
+      <h3 style="font-size: 2rem; font-weight: 800; margin-bottom: 0.25rem;">翁煒傑</h3>
+      <h4 style="font-size: 1.2rem; font-weight: 400; margin-bottom: 1rem; color: gray;">WJ</h4>
+      <div style="width: 40px; height: 3px; background: white; margin-bottom: 1.5rem; margin-left: auto;"></div>
+      <p style="font-size: 0.9rem; color: gray; letter-spacing: 0.05em; margin-bottom: 1rem;">導演 · 動態攝影</p>
+      <p style="font-size: 1.1rem; line-height: 1.8;">木桶怪獸</p>
+    </div>
+    <div style="flex: 1; min-width: 280px;">
+      <img src="/images/wj.jpg" alt="翁煒傑 WJ"
+           style="width: 100%; aspect-ratio: 1/1; object-fit: cover; border-radius: 1rem;">
+    </div>
+  </div>
+
+</div>
 
 ---
 

@@ -73,9 +73,7 @@ params:
     heading: "合作過的品牌"
     content:
       - text: "從南部發跡，服務超過數十個品牌與單位。每一次合作，都是一次對影像品質的承諾。"
-    logos:
-      - image: "images/global/main.png"
-        alt: "Sniperjoy"
+    logos: []
  
   social_media:
     facebook:

@@ -1,4 +1,4 @@
-{{ $images := split .Params.images "," }}
+{{ $raw := .Params.images }}{{ $images := slice }}{{ range split $raw "," }}{{ $s := . | replaceRE "^\\s+|\\s+$" "" }}{{ if $s }}{{ $images = $images | append $s }}{{ end }}{{ end }}
 {{ $title := .Params.title }}
 
 {{ if $title }}
@@ -7,7 +7,7 @@
 
 <div style="display:grid; grid-template-columns:repeat(auto-fill, minmax(220px,1fr)); gap:0.75rem; margin-bottom:2rem;">
   {{ range $i, $img := $images }}
-<img src="{{ strings.TrimSpace $img }}"
+  <img src="{{ $img }}"
        data-gallery="{{ $title }}"
        data-index="{{ $i }}"
        style="width:100%; object-fit:contain; border-radius:0.5rem; cursor:pointer; background:#111;"

@@ -56,33 +56,27 @@ params:
   newsletter_signup: false
 
   p1:
-    heading: "斯奈波喬伊"
+    heading: "斯奈波喬伊 Sniperjoy"
     image: "images/pages/main.png"
     content:
-      - text: "斯奈波喬伊致力於影像製作，從音樂錄影帶到活動紀錄，從活動轉播到劇情片，都能帶給您最優質的角度與視野。"
-      - text: "從南部發跡，在台灣四處闖蕩，為了捕捉客戶心目中的畫面。"
-      - text: "堅持使用高規格硬體，有著完善且堅強的團隊，確保每一張照片與每一段影片都能擁有極致的畫質與寬容度。無論是低光源的活動現場，還是需要高精度紀錄的商業攝影，我們都能精準掌握。"
+      - text: "專注影像製作十年，從 30 秒商業廣告到深度紀錄片，服務客戶涵蓋品牌企業、政府機關與文化單位。"
+      - text: "從台南發跡，走遍台灣，高山海邊，只要是為了實現客戶心目中的畫面，我們就帶著器材出發。"
+      - text: "高規格設備、完整製作團隊，精準掌握每一種拍攝環境——低光源現場、商業棚拍、戶外紀實，全都到位。"
 
  
   social_media:
-    github:
-      enabled: true
-      url: 'https://github.com/ChuanX6315'
     facebook:
       enabled: true
-      url: 'https://www.facebook.com/share/1ETSUJ1qPz/?mibextid=wwXIfr'
+      url: 'https://www.facebook.com/profile.php?id=61572563786925'
     instagram:
       enabled: true
       url: 'https://www.instagram.com/chuanx.officialll/'
-    twitter:
-      enabled: true
-      url: 'https://twitter.com/we_nmixx'
     
 
 menu:
   main:
     - identifier: prose
-      name: 攝影作品
+      name: 影像作品
       url: /prose/
       weight: 10
     - identifier: about

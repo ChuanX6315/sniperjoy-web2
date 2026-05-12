@@ -47,7 +47,7 @@ description: 斯奈波喬伊 Sniperjoy — 專注影像製作，從商業廣告�
   <!-- Rafael -->
   <div style="display: flex; align-items: center; gap: 3rem; margin-bottom: 5rem; flex-wrap: wrap;">
     <div style="flex: 1; min-width: 280px;">
-      <img src="/images/cyw.jpg" alt="王傳亦 Rafael"
+      <img src="/images/cyw.JPG" alt="王傳亦 Rafael"
            style="width: 100%; aspect-ratio: 1/1; object-fit: cover; border-radius: 1rem;">
     </div>
     <div style="flex: 1; min-width: 240px;">

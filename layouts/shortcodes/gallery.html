@@ -11,44 +11,70 @@
        data-gallery="{{ $title }}"
        data-index="{{ $i }}"
        style="width:100%; object-fit:contain; border-radius:0.5rem; cursor:pointer; background:#111; transition: transform 0.3s ease, box-shadow 0.3s ease;"
-onmouseover="this.style.transform='scale(1.05)'; this.style.boxShadow='0 8px 30px rgba(0,0,0,0.4)';"
-onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='none';"
+       onmouseover="this.style.transform='scale(1.05)'; this.style.boxShadow='0 8px 30px rgba(0,0,0,0.4)';"
+       onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='none';"
        onclick="openLB(this)"
        loading="eager">
   {{ end }}
 </div>
 
-<div id="lb" style="display:none; position:fixed; inset:0; background:rgba(0,0,0,0.92); z-index:9999; align-items:center; justify-content:center;" onclick="closeLB()">
-  <button onclick="event.stopPropagation();moveLB(-1)" style="position:absolute;left:1.5rem;background:none;border:none;color:white;font-size:4rem;cursor:pointer;">&#8249;</button>
-  <img id="lb-img" style="max-height:90vh;max-width:85vw;border-radius:0.5rem;object-fit:contain;">
-  <button onclick="event.stopPropagation();moveLB(1)" style="position:absolute;right:1.5rem;background:none;border:none;color:white;font-size:4rem;cursor:pointer;">&#8250;</button>
-  <button onclick="closeLB()" style="position:absolute;top:1rem;right:1.5rem;background:none;border:none;color:white;font-size:2rem;cursor:pointer;">&#10005;</button>
-</div>
-
 <script>
-(function(){
+if (!window._lbInit) {
+  window._lbInit = true;
+
+  var _lb = document.createElement('div');
+  _lb.id = 'lb';
+  _lb.style.cssText = 'display:none; position:fixed; top:0; left:0; width:100vw; height:100vh; background:rgba(0,0,0,0.92); z-index:9999; align-items:center; justify-content:center;';
+  _lb.innerHTML = `
+    <button onclick="event.stopPropagation();moveLB(-1)" style="position:absolute;left:1.5rem;background:none;border:none;color:white;font-size:4rem;cursor:pointer;">&#8249;</button>
+    <img id="lb-img" style="max-height:90vh;max-width:85vw;border-radius:0.5rem;object-fit:contain;">
+    <button onclick="event.stopPropagation();moveLB(1)" style="position:absolute;right:1.5rem;background:none;border:none;color:white;font-size:4rem;cursor:pointer;">&#8250;</button>
+    <button onclick="closeLB()" style="position:absolute;top:1rem;right:1.5rem;background:none;border:none;color:white;font-size:2rem;cursor:pointer;">&#10005;</button>
+  `;
+  _lb.onclick = function() { closeLB(); };
+  document.body.appendChild(_lb);
+
   var imgs = [], idx = 0;
+
   window.openLB = function(el) {
     var g = el.getAttribute('data-gallery');
     imgs = Array.from(document.querySelectorAll('img[data-gallery="'+g+'"]'));
     idx = parseInt(el.getAttribute('data-index'));
-    document.getElementById('lb-img').src = imgs[idx].src;
     var lb = document.getElementById('lb');
+    document.getElementById('lb-img').src = imgs[idx].src;
+    lb.style.opacity = '0';
     lb.style.display = 'flex';
+    lb.style.transition = 'opacity 0.3s ease';
+    setTimeout(function() { lb.style.opacity = '1'; }, 10);
+    document.body.style.overflow = 'hidden';
     document.addEventListener('keydown', onKey);
-  };
-  window.closeLB = function() {
-    document.getElementById('lb').style.display = 'none';
+};
+
+window.closeLB = function() {
+    var lb = document.getElementById('lb');
+    lb.style.opacity = '0';
+    setTimeout(function() {
+        lb.style.display = 'none';
+        document.body.style.overflow = '';
+    }, 300);
     document.removeEventListener('keydown', onKey);
-  };
+};
+
   window.moveLB = function(dir) {
     idx = (idx + dir + imgs.length) % imgs.length;
-    document.getElementById('lb-img').src = imgs[idx].src;
-  };
+    var lbImg = document.getElementById('lb-img');
+    lbImg.style.transition = 'opacity 0.2s ease';
+    lbImg.style.opacity = '0';
+    setTimeout(function() {
+        lbImg.src = imgs[idx].src;
+        lbImg.style.opacity = '1';
+    }, 200);
+};
+
   function onKey(e) {
     if(e.key==='ArrowLeft') moveLB(-1);
     if(e.key==='ArrowRight') moveLB(1);
     if(e.key==='Escape') closeLB();
   }
-})();
+}
 </script>

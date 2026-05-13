@@ -10,7 +10,9 @@
   <img src="{{ $img }}"
        data-gallery="{{ $title }}"
        data-index="{{ $i }}"
-       style="width:100%; object-fit:contain; border-radius:0.5rem; cursor:pointer; background:#111;"
+       style="width:100%; object-fit:contain; border-radius:0.5rem; cursor:pointer; background:#111; transition: transform 0.3s ease, box-shadow 0.3s ease;"
+onmouseover="this.style.transform='scale(1.05)'; this.style.boxShadow='0 8px 30px rgba(0,0,0,0.4)';"
+onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='none';"
        onclick="openLB(this)"
        loading="eager">
   {{ end }}

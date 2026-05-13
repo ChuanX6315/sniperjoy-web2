@@ -33,7 +33,7 @@ if (!document.getElementById('lb')) {
   _lb.onclick = function(e) { if(e.target === _lb) closeLB(); };
   document.body.appendChild(_lb);
 
-  var imgs = [], idx = 0;
+  var imgs = [], idx = 0, touchStartX = 0;
 
   window.openLB = function(el) {
     var g = el.getAttribute('data-gallery');
@@ -50,6 +50,19 @@ if (!document.getElementById('lb')) {
     document.body.style.position = 'fixed';
     document.body.style.width = '100%';
     document.addEventListener('keydown', onKey);
+
+    // 滑動手勢
+    lb.addEventListener('touchstart', function(e) {
+      touchStartX = e.touches[0].clientX;
+    }, { passive: true });
+
+    lb.addEventListener('touchend', function(e) {
+      var diff = touchStartX - e.changedTouches[0].clientX;
+      if (Math.abs(diff) > 50) {
+        if (diff > 0) moveLB(1);
+        else moveLB(-1);
+      }
+    }, { passive: true });
   };
 
   window.closeLB = function() {

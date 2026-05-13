@@ -1,5 +1,5 @@
 ---
-title: "影像作品｜SNIPERJOY 斯奈波喬伊"
+title: "影像作品"
 date: 2026-04-06T04:30:00+08:00
 draft: false
 description: "瀏覽斯奈波喬伊的影像作品，包含商業廣告TVC、政府形象影片、品牌紀錄片與平面攝影作品集。"

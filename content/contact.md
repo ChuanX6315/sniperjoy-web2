@@ -1,5 +1,5 @@
 ---
-title: "聯絡我們｜SNIPERJOY 斯奈波喬伊"
+title: "聯絡我們"
 date: 2021-12-18T03:10:36.000Z
 draft: false
 language: zh-tw

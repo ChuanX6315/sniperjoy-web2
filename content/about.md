@@ -1,5 +1,5 @@
 ---
-title: "關於我們｜SNIPERJOY 斯奈波喬伊"
+title: "關於我們"
 date: 2026-05-13T11:10:36+08:00
 draft: false
 language: zh-tw

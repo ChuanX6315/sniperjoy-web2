@@ -24,14 +24,14 @@ if (!window._lbInit) {
 
   var _lb = document.createElement('div');
   _lb.id = 'lb';
-  _lb.style.cssText = 'display:none; position:fixed; top:0; left:0; width:100vw; height:100vh; background:rgba(0,0,0,0.92); z-index:9999; align-items:center; justify-content:center;';
+  _lb.style.cssText = 'display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.95); z-index:99999; align-items:center; justify-content:center; overflow:hidden;';
   _lb.innerHTML = `
-    <button onclick="event.stopPropagation();moveLB(-1)" style="position:absolute;left:1.5rem;background:none;border:none;color:white;font-size:4rem;cursor:pointer;">&#8249;</button>
-    <img id="lb-img" style="max-height:90vh;max-width:85vw;border-radius:0.5rem;object-fit:contain;">
-    <button onclick="event.stopPropagation();moveLB(1)" style="position:absolute;right:1.5rem;background:none;border:none;color:white;font-size:4rem;cursor:pointer;">&#8250;</button>
-    <button onclick="closeLB()" style="position:absolute;top:1rem;right:1.5rem;background:none;border:none;color:white;font-size:2rem;cursor:pointer;">&#10005;</button>
+    <button onclick="event.stopPropagation();moveLB(-1)" style="position:absolute;left:0.5rem;top:50%;transform:translateY(-50%);background:none;border:none;color:white;font-size:3rem;cursor:pointer;z-index:100000;">&#8249;</button>
+    <img id="lb-img" style="max-height:85vh;max-width:90vw;border-radius:0.5rem;object-fit:contain;display:block;">
+    <button onclick="event.stopPropagation();moveLB(1)" style="position:absolute;right:0.5rem;top:50%;transform:translateY(-50%);background:none;border:none;color:white;font-size:3rem;cursor:pointer;z-index:100000;">&#8250;</button>
+    <button onclick="closeLB()" style="position:absolute;top:1rem;right:1rem;background:none;border:none;color:white;font-size:2rem;cursor:pointer;z-index:100000;">&#10005;</button>
   `;
-  _lb.onclick = function() { closeLB(); };
+  _lb.onclick = function(e) { if(e.target === _lb) closeLB(); };
   document.body.appendChild(_lb);
 
   var imgs = [], idx = 0;
@@ -41,24 +41,29 @@ if (!window._lbInit) {
     imgs = Array.from(document.querySelectorAll('img[data-gallery="'+g+'"]'));
     idx = parseInt(el.getAttribute('data-index'));
     var lb = document.getElementById('lb');
-    document.getElementById('lb-img').src = imgs[idx].src;
+    var lbImg = document.getElementById('lb-img');
+    lbImg.src = imgs[idx].src;
     lb.style.opacity = '0';
     lb.style.display = 'flex';
     lb.style.transition = 'opacity 0.3s ease';
     setTimeout(function() { lb.style.opacity = '1'; }, 10);
     document.body.style.overflow = 'hidden';
+    document.body.style.position = 'fixed';
+    document.body.style.width = '100%';
     document.addEventListener('keydown', onKey);
-};
+  };
 
-window.closeLB = function() {
+  window.closeLB = function() {
     var lb = document.getElementById('lb');
     lb.style.opacity = '0';
     setTimeout(function() {
-        lb.style.display = 'none';
-        document.body.style.overflow = '';
+      lb.style.display = 'none';
+      document.body.style.overflow = '';
+      document.body.style.position = '';
+      document.body.style.width = '';
     }, 300);
     document.removeEventListener('keydown', onKey);
-};
+  };
 
   window.moveLB = function(dir) {
     idx = (idx + dir + imgs.length) % imgs.length;
@@ -66,10 +71,10 @@ window.closeLB = function() {
     lbImg.style.transition = 'opacity 0.2s ease';
     lbImg.style.opacity = '0';
     setTimeout(function() {
-        lbImg.src = imgs[idx].src;
-        lbImg.style.opacity = '1';
+      lbImg.src = imgs[idx].src;
+      lbImg.style.opacity = '1';
     }, 200);
-};
+  };
 
   function onKey(e) {
     if(e.key==='ArrowLeft') moveLB(-1);

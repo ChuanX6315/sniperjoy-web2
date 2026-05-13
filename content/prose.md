@@ -42,7 +42,7 @@ description: "瀏覽斯奈波喬伊的影像作品，包含商業廣告TVC、政
 <div style="display:grid; grid-template-columns: repeat(auto-fill, minmax(300px,1fr)); gap:1.5rem; margin: 1.5rem 0;">
 
 <div>
-<p style="font-weight:700; margin-bottom:0.25rem;">臺南市政府｜身心障礙者及服務人員形象影片</p>
+<p style="font-weight:700; margin-bottom:0.25rem;">臺南市政府｜身心障礙者及服務人員形象片</p>
 <p style="font-size:0.85rem; color:gray; margin-bottom:0.75rem;">導演</p>
 {{< youtube bLvjarYcAYg >}}
 </div>

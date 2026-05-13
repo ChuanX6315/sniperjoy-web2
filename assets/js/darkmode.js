@@ -22,6 +22,7 @@
             localStorage.setItem('color-theme', isDarkMode ? 'light' : 'dark');
             themeToggleDarkIcon.classList.toggle('hidden');
             themeToggleLightIcon.classList.toggle('hidden');
+            updateLogo();
         }, { passive: true });
     }
 

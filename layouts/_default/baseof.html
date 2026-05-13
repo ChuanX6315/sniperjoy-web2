@@ -59,6 +59,14 @@
     document.querySelectorAll('.scroll-fade').forEach(function(el) {
         observer.observe(el);
     });
+    function updateLogo() {
+    var isDark = document.documentElement.classList.contains('dark');
+    var light = document.getElementById('logo-light');
+    var dark = document.getElementById('logo-dark');
+    if (light) light.style.display = isDark ? 'none' : 'block';
+    if (dark) dark.style.display = isDark ? 'block' : 'none';
+}
+updateLogo();
     </script>
 </body>
 

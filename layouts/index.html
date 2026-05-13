@@ -26,10 +26,17 @@
     <div class="mx-auto max-w-7xl px-6 lg:px-8 lg:grid lg:grid-cols-2 lg:gap-24 lg:items-center">
       <div class="overflow-hidden rounded-2xl shadow-xl">
         {{ $p1image := resources.Get .Site.Params.P1.Image }}
+        {{ $p1dark := resources.Get .Site.Params.P1dark.Image }}
         {{ with $p1image }}
           {{ with .Resize "600x600 webp q85" }}
             <img src="{{ .RelPermalink }}" width="{{ .Width }}" height="{{ .Height }}"
-                 class="w-full h-auto" alt="Sniperjoy" loading="lazy" />
+                 class="w-full h-auto dark:hidden" alt="Sniperjoy" loading="lazy" />
+          {{ end }}
+        {{ end }}
+        {{ with $p1dark }}
+          {{ with .Resize "600x600 webp q85" }}
+            <img src="{{ .RelPermalink }}" width="{{ .Width }}" height="{{ .Height }}"
+                 class="w-full h-auto hidden dark:block" alt="Sniperjoy" loading="lazy" />
           {{ end }}
         {{ end }}
       </div>

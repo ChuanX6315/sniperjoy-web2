@@ -1,9 +1,9 @@
 ---
-title: "關於我們"
+title: "關於我們｜SNIPERJOY 斯奈波喬伊"
 date: 2026-05-13T11:10:36+08:00
 draft: false
 language: zh-tw
-description: 斯奈波喬伊 Sniperjoy — 專注影像製作，從商業廣告到紀錄片。
+description: "斯奈波喬伊是專業影像製作團隊，服務涵蓋商業廣告、政府形象影片、紀錄片與平面攝影，合作客戶包含勝昌製藥、臺南市政府等。"
 ---
 
 # 斯奈波喬伊 Sniperjoy

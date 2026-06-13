@@ -78,14 +78,14 @@ if (!document.getElementById('lb')) {
   };
 
   window.moveLB = function(dir) {
-    idx = (idx + dir + imgs.length) % imgs.length;
-    var lbImg = document.getElementById('lb-img');
-    lbImg.style.transition = 'opacity 0.2s ease';
-    lbImg.style.opacity = '0';
-    setTimeout(function() {
-      lbImg.src = imgs[idx].src;
-      lbImg.style.opacity = '1';
-    }, 200);
+      idx = (idx + dir + imgs.length) % imgs.length;
+      var lbImg = document.getElementById('lb-img');
+      lbImg.style.opacity = '0';
+      lbImg.src = '';
+      setTimeout(function() {
+        lbImg.src = imgs[idx].src;
+        lbImg.style.opacity = '1';
+      }, 200);
   };
 
   function onKey(e) {

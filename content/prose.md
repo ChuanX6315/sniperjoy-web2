@@ -14,7 +14,7 @@ description: "瀏覽斯奈波喬伊的影像作品，包含商業廣告TVC、政
     style="padding:0.75rem 0; background:none; border:none; font-size:1rem; cursor:pointer; transition:all 0.2s; margin-bottom:-1px;">
     影片作品
   </button>
-  <button @click="tab='photo'"
+  <button @click="tab='photo'; $nextTick(() => window.dispatchEvent(new Event('resize')))"
     :style="tab==='photo' ? 'font-weight:700; border-bottom:3px solid #5b5ef4; color:black;' : 'color:gray; border-bottom:3px solid transparent;'"
     style="padding:0.75rem 0; background:none; border:none; font-size:1rem; cursor:pointer; transition:all 0.2s; margin-bottom:-1px;">
     平面攝影
@@ -136,6 +136,9 @@ function toggleAlbum(id) {
   });
   if (document.getElementById('album-' + id).style.display === 'block') {
     document.getElementById('album-' + id).scrollIntoView({ behavior: 'smooth', block: 'start' });
+    setTimeout(function() {
+      window.dispatchEvent(new Event('resize'));
+    }, 100);
   }
 }
 </script>

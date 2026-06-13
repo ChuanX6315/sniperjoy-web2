@@ -1,22 +1,52 @@
 {{ $raw := .Params.images }}{{ $images := slice }}{{ range split $raw "," }}{{ $s := . | replaceRE "^\\s+|\\s+$" "" }}{{ if $s }}{{ $images = $images | append $s }}{{ end }}{{ end }}
 {{ $title := .Params.title }}
+{{ $uid := $title | urlize }}
 
 {{ if $title }}
 <h3 style="font-size:1.5rem; font-weight:800; margin-bottom:1rem; padding-bottom:0.5rem; border-bottom:2px solid #444;">{{ $title }}</h3>
 {{ end }}
 
-<div style="display:grid; grid-template-columns:repeat(auto-fill, minmax(220px,1fr)); gap:0.75rem; margin-bottom:2rem;">
+<div style="column-count:3; column-gap:0.75rem; margin-bottom:2rem;">
   {{ range $i, $img := $images }}
-  <img src="{{ $img }}"
-       data-gallery="{{ $title }}"
-       data-index="{{ $i }}"
-       style="width:100%; object-fit:contain; border-radius:0.5rem; cursor:pointer; background:#111; transition: transform 0.3s ease, box-shadow 0.3s ease;"
-       onmouseover="this.style.transform='scale(1.05)'; this.style.boxShadow='0 8px 30px rgba(0,0,0,0.4)';"
-       onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='none';"
-       onclick="openLB(this)"
-       loading="lazy">
+  <div style="break-inside:avoid; margin-bottom:0.75rem; margin-top:0; display:inline-block; width:100%;">
+    <img src="{{ $img }}"
+         data-gallery="{{ $title }}"
+         data-index="{{ $i }}"
+         style="width:100%; display:block; border-radius:0.5rem; cursor:pointer; background:#111; transition: filter 0.3s ease;"
+         onmouseover="this.style.filter='brightness(0.7)';"
+         onmouseout="this.style.filter='brightness(1)';"
+         onclick="openLB(this)"
+         loading="eager">
+  </div>
   {{ end }}
 </div>
+
+<style>
+    #grid-{{ $uid }} { position: relative; }
+    .grid-sizer-{{ $uid }},
+    .grid-item-{{ $uid }} { width: 25%; float: left; }
+    @media (max-width: 768px) {
+      .grid-sizer-{{ $uid }},
+      .grid-item-{{ $uid }} { width: 50%; }
+    }
+    </style>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.2.2/masonry.pkgd.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/imagesloaded/5.0.0/imagesloaded.pkgd.min.js"></script>
+<script>
+(function() {
+  var grid = document.getElementById('grid-{{ $uid }}');
+  var msnry = new Masonry(grid, {
+    itemSelector: '.grid-item-{{ $uid }}',
+    columnWidth: '.grid-sizer-{{ $uid }}',
+    percentPosition: true,
+    gutter: 0
+  });
+  imagesLoaded(grid).on('progress', function() {
+    msnry.layout();
+  });
+})();
+</script>
 
 <script>
 if (!document.getElementById('lb')) {
@@ -47,11 +77,8 @@ if (!document.getElementById('lb')) {
     lb.style.transition = 'opacity 0.3s ease';
     setTimeout(function() { lb.style.opacity = '1'; }, 10);
     document.body.style.overflow = 'hidden';
-    document.body.style.position = 'fixed';
-    document.body.style.width = '100%';
     document.addEventListener('keydown', onKey);
 
-    // 滑動手勢
     lb.addEventListener('touchstart', function(e) {
       touchStartX = e.touches[0].clientX;
     }, { passive: true });
@@ -71,21 +98,13 @@ if (!document.getElementById('lb')) {
     setTimeout(function() {
       lb.style.display = 'none';
       document.body.style.overflow = '';
-      document.body.style.position = '';
-      document.body.style.width = '';
     }, 300);
     document.removeEventListener('keydown', onKey);
   };
 
   window.moveLB = function(dir) {
-      idx = (idx + dir + imgs.length) % imgs.length;
-      var lbImg = document.getElementById('lb-img');
-      lbImg.style.opacity = '0';
-      lbImg.src = '';
-      setTimeout(function() {
-        lbImg.src = imgs[idx].src;
-        lbImg.style.opacity = '1';
-      }, 200);
+    idx = (idx + dir + imgs.length) % imgs.length;
+    document.getElementById('lb-img').src = imgs[idx].src;
   };
 
   function onKey(e) {

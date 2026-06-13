@@ -71,7 +71,7 @@ description: "斯奈波喬伊是專業影像製作團隊，服務涵蓋商業廣
       <p style="font-size: 1.1rem; line-height: 1.8;">木桶怪獸</p>
     </div>
     <div style="flex: 1; min-width: 280px;">
-      <img src="/images/wj.jpg" alt="翁煒傑 WJ"
+      <img src="/images/weng.JPG" alt="翁煒傑 WJ"
            style="width: 100%; aspect-ratio: 1/1; object-fit: cover; border-radius: 1rem;">
     </div>
   </div>

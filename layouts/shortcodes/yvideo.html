@@ -1,0 +1,58 @@
+{{ $id := .Get 0 }}
+<div style="position:relative; cursor:pointer; border-radius:0.5rem; overflow:hidden;" onclick="openVideo('{{ $id }}')">
+  <img src="https://img.youtube.com/vi/{{ $id }}/maxresdefault.jpg"
+       style="width:100%; display:block; aspect-ratio:16/9; object-fit:cover;">
+  <div style="position:absolute; inset:0; background:rgba(0,0,0,0.3); display:flex; align-items:center; justify-content:center; transition:background 0.2s;"
+       onmouseover="this.style.background='rgba(0,0,0,0.15)'"
+       onmouseout="this.style.background='rgba(0,0,0,0.3)'">
+    <svg width="64" height="64" viewBox="0 0 64 64" fill="none">
+      <circle cx="32" cy="32" r="32" fill="rgba(255,255,255,0.9)"/>
+      <polygon points="26,20 26,44 48,32" fill="#111"/>
+    </svg>
+  </div>
+</div>
+
+<script>
+if (!window._videoModalInit) {
+  window._videoModalInit = true;
+  var _vm = document.createElement('div');
+  _vm.id = 'video-modal';
+  _vm.style.cssText = 'display:none; position:fixed; inset:0; background:rgba(0,0,0,0.95); z-index:99999; align-items:center; justify-content:center;';
+  _vm.innerHTML = `
+    <div style="position:relative; width:90vw; max-width:960px;">
+      <button onclick="closeVideo()" style="position:absolute; top:-2.5rem; right:0; background:none; border:none; color:white; font-size:2rem; cursor:pointer;">&#10005;</button>
+      <div id="video-frame" style="position:relative; padding-bottom:56.25%; height:0; overflow:hidden; border-radius:0.5rem;">
+        <iframe id="video-iframe" style="position:absolute; top:0; left:0; width:100%; height:100%; border:0;" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      </div>
+    </div>
+  `;
+  _vm.onclick = function(e) { if(e.target === _vm) closeVideo(); };
+  document.body.appendChild(_vm);
+
+  window.openVideo = function(id) {
+    document.getElementById('video-iframe').src = 'https://www.youtube-nocookie.com/embed/' + id + '?autoplay=1&rel=0&modestbranding=1';
+    var vm = document.getElementById('video-modal');
+    vm.style.opacity = '0';
+    vm.style.display = 'flex';
+    vm.style.transition = 'opacity 0.3s ease';
+    setTimeout(function() { vm.style.opacity = '1'; }, 10);
+    document.body.style.overflow = 'hidden';
+    document.addEventListener('keydown', videoKey);
+  };
+
+  window.closeVideo = function() {
+    var vm = document.getElementById('video-modal');
+    vm.style.opacity = '0';
+    setTimeout(function() {
+      vm.style.display = 'none';
+      document.getElementById('video-iframe').src = '';
+      document.body.style.overflow = '';
+    }, 300);
+    document.removeEventListener('keydown', videoKey);
+  };
+
+  function videoKey(e) {
+    if(e.key === 'Escape') closeVideo();
+  }
+}
+</script>

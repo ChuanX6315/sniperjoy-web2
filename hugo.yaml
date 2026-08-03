@@ -49,7 +49,7 @@ markup:
 params:
   author: Sniperjoy
   authorimage: ../assets/images/global/main.png
-  og_image: /images/Gemini_Generated_Image_86.png
+  og_image: /images/sniperjoy-logo0804L.png
   moto: ""
   description: "斯奈波喬伊 Sniperjoy — 影像製作團隊，提供商業廣告TVC、政府形象影片、品牌紀錄片、平面攝影等服務。"
   disable_theme_toggle: false
@@ -57,14 +57,14 @@ params:
 
   p1:
     heading: "斯奈波喬伊 Sniperjoy"
-    image: "images/pages/logo-black.png"
+    image: "images/pages/sniperjoy-logo0804D.png"
     content:
       - text: "我們專注影像製作，從 30 秒商業廣告到深度紀錄片，服務客戶涵蓋品牌企業、政府機關與文化單位。"
       - text: "從台南發跡，走遍台灣，高山海邊，只要是為了實現客戶心目中的畫面，我們就帶著器材出發。"
       - text: "高規格設備、完整製作團隊，精準掌握每一種拍攝環境——低光源現場、商業棚拍、戶外紀實，全都到位。"
 
   p1dark:
-    image: "images/pages/logo-white.png"
+    image: "images/pages/sniperjoy-logo0804L.png"
   p2:
     heading: "我們的服務"
     image: "images/pages/main.png"
